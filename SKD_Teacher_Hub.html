@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Super Kids Day 2025 – Jeffreys Grove Elementary</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1B3A5C;--navy-dark:#132842;--gold:#D4A017;--gold-light:#F5D76E;--cream:#FFF9ED;--sky:#E8F4FD;--white:#FFFFFF;--text:#2C3E50;--text-light:#6B7C8D;--shadow:0 4px 24px rgba(27,58,92,.12);--shadow-hover:0 8px 40px rgba(27,58,92,.2)}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-dark) 60%,#0D1B2A 100%);padding:3rem 1.5rem 4rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;left:-30%;width:160%;height:200%;background:radial-gradient(ellipse at 30% 50%,rgba(212,160,23,.08) 0%,transparent 60%),radial-gradient(ellipse at 70% 30%,rgba(245,215,110,.05) 0%,transparent 50%);pointer-events:none}
+.hero-content{position:relative;z-index:1;max-width:700px;margin:0 auto}
+.hero-badge{display:inline-block;background:rgba(212,160,23,.15);border:1px solid rgba(212,160,23,.3);color:var(--gold-light);font-family:'Nunito',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;padding:.4rem 1.2rem;border-radius:100px;margin-bottom:1.5rem;animation:fadeDown .6s ease}
+.hero h1{font-family:'Fredoka',sans-serif;font-weight:700;font-size:clamp(2.2rem,5vw,3.4rem);color:var(--white);line-height:1.15;margin-bottom:.5rem;animation:fadeDown .6s ease .1s both}
+.hero h1 span{color:var(--gold-light)}
+.hero-date{font-family:'Fredoka',sans-serif;font-weight:500;font-size:1.2rem;color:var(--gold);margin-bottom:.4rem;animation:fadeDown .6s ease .2s both}
+.hero-times{font-size:.95rem;color:rgba(255,255,255,.65);line-height:1.7;animation:fadeDown .6s ease .3s both}
+.hero-cta{display:inline-block;margin-top:1.5rem;padding:.75rem 2rem;background:var(--gold);color:var(--navy-dark);font-family:'Fredoka',sans-serif;font-weight:600;font-size:1rem;border-radius:100px;text-decoration:none;transition:all .3s ease;animation:fadeDown .6s ease .4s both}
+.hero-cta:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 6px 20px rgba(212,160,23,.3)}
+.hero-wave{position:absolute;bottom:-2px;left:0;width:100%;height:50px}
+.container{max-width:900px;margin:0 auto;padding:2rem 1.5rem 2rem}
+.section-label{font-family:'Fredoka',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem;padding-left:.1rem}
+.section-title{font-family:'Fredoka',sans-serif;font-weight:700;font-size:1.6rem;color:var(--navy);margin-bottom:1.8rem}
+.cards{display:grid;gap:1rem}
+.card{background:var(--white);border-radius:16px;padding:1.5rem 1.6rem;box-shadow:var(--shadow);display:flex;align-items:center;gap:1.2rem;text-decoration:none;color:var(--text);transition:all .3s cubic-bezier(.25,.46,.45,.94);border:1px solid rgba(27,58,92,.06);position:relative;overflow:hidden;cursor:pointer;animation:fadeUp .5s ease both}
+.card:nth-child(1){animation-delay:.05s}.card:nth-child(2){animation-delay:.1s}.card:nth-child(3){animation-delay:.15s}.card:nth-child(4){animation-delay:.2s}
+.card::after{content:'';position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:var(--sky);transition:all .3s ease;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%231B3A5C' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17L17 7'/%3E%3Cpath d='M7 7h10v10'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:center}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:rgba(212,160,23,.2)}
+.card:hover::after{background-color:var(--gold);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17L17 7'/%3E%3Cpath d='M7 7h10v10'/%3E%3C/svg%3E")}
+.card-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.4rem}
+.card-icon.blue{background:var(--sky)}.card-icon.gold{background:#FDF5E0}.card-icon.green{background:#E8F8EE}.card-icon.pink{background:#FDE8EF}.card-icon.purple{background:#F0E8FD}.card-icon.orange{background:#FFF0E0}.card-icon.red{background:#FFE8E8}
+.card-body{flex:1;padding-right:2.5rem}
+.card-title{font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.05rem;color:var(--navy);margin-bottom:.2rem}
+.card-desc{font-size:.85rem;color:var(--text-light);line-height:1.5}
+.map-card{background:var(--white);border-radius:20px;box-shadow:var(--shadow);border:1px solid rgba(27,58,92,.06);overflow:hidden}
+.map-card img{width:100%;display:block}
+.map-legend{padding:1.2rem 1.5rem 1.5rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:.5rem .8rem}
+.map-legend-item{display:flex;align-items:center;gap:.55rem;padding:.35rem 0}
+.map-legend-num{width:26px;height:26px;border-radius:7px;background:var(--navy);color:var(--gold-light);font-family:'Fredoka',sans-serif;font-weight:700;font-size:.75rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.map-legend-name{font-size:.8rem;font-weight:600;color:var(--text);line-height:1.25}
+.footer{text-align:center;padding:2rem 1.5rem 3rem;color:var(--text-light);font-size:.85rem;line-height:1.8}
+.footer a{color:var(--navy);font-weight:700;text-decoration:none}.footer a:hover{color:var(--gold)}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.hero{padding:2rem 1.2rem 3rem}.card{padding:1.2rem;gap:1rem}.card-icon{width:42px;height:42px;font-size:1.2rem}.map-legend{grid-template-columns:repeat(2,1fr);gap:.4rem .6rem;padding:1rem}.map-legend-num{width:22px;height:22px;font-size:.7rem}.map-legend-name{font-size:.75rem}}
+.weather-notice{max-width:900px;margin:-1rem auto 0;padding:1rem 1.5rem}
+.weather-box{background:#FFF3E0;border:1px solid #FFB74D;border-radius:14px;padding:1.1rem 1.4rem;display:flex;align-items:flex-start;gap:.8rem;animation:fadeUp .5s ease .3s both}
+.weather-icon{font-size:1.3rem;flex-shrink:0;margin-top:.1rem}
+.weather-text{font-size:.9rem;line-height:1.6;color:#5D4037}
+.weather-text strong{color:#E65100}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="hero-content">
+<div class="hero-badge">Jeffreys Grove Elementary</div>
+<h1>Super <span>Kids</span> Day 2025</h1>
+<p class="hero-date">Tuesday, April 21st</p>
+<p class="hero-times">Pre-K &amp; 3rd–5th Grade: 9:30 – 12:00<br>K–2nd Grade: 12:35 – 3:00<br><strong style="color:rgba(255,255,255,.85)">14 Stations &bull; ~8 Minutes Each &bull; Listen for the Whistle!</strong></p>
+<a class="hero-cta" href="https://www.signupgenius.com/go/10C084DAEA828A6FE3-61929396-42126" target="_blank">&#9997; Volunteer Sign-Up</a>
+</div>
+<svg class="hero-wave" viewBox="0 0 1440 50" preserveAspectRatio="none"><path d="M0,25 C360,50 720,0 1080,25 C1260,37 1380,50 1440,45 L1440,50 L0,50 Z" fill="#FFF9ED"/></svg>
+</div>
+
+<div class="weather-notice">
+<div class="weather-box">
+<div class="weather-icon">&#9925;</div>
+<div class="weather-text"><strong>Weather Update:</strong> With Super Kids Day moving to April this year, water games will depend on the weather. There may be a couple of water stations, or none at all. Please keep checking this page for the most up-to-date information as we get closer to the event!</div>
+</div>
+</div>
+
+<div class="container">
+<p class="section-label">Station Rotations</p>
+<h2 class="section-title">Find Your Starting Station</h2>
+<div class="cards">
+<a class="card" href="https://docs.google.com/document/d/177XCu-_5wk_HVFfgSTBhtJ2Vm6k3su3g/edit?usp=share_link&ouid=113207806056520219935&rtpof=true&sd=true" target="_blank"><div class="card-icon green">&#127749;</div><div class="card-body"><div class="card-title">Morning: Pre-K &amp; 3rd–5th Grade</div><div class="card-desc">9:30 – 12:00 &bull; Starting stations and rotation order for each class.</div></div></a>
+<a class="card" href="https://docs.google.com/document/d/13tqgEU3uFTSJCGJ47xZ8z_sb5bY6dDHX/edit?usp=share_link&ouid=113207806056520219935&rtpof=true&sd=true" target="_blank"><div class="card-icon pink">&#9728;&#65039;</div><div class="card-body"><div class="card-title">Afternoon: K–2nd Grade</div><div class="card-desc">12:35 – 3:00 &bull; Starting stations and rotation order for each class.</div></div></a>
+</div>
+</div>
+
+<div class="container" style="padding-top:0">
+<p class="section-label">Field Map</p>
+<h2 class="section-title">Station Locations</h2>
+<div class="map-card">
+<img src="https://static.wixstatic.com/media/b61df5_05bd1654f9f94df98a7e7f22ad31ff42~mv2.png" alt="Super Kids Day Station Map - Jeffreys Grove Elementary">
+<div class="map-legend">
+<div class="map-legend-item"><div class="map-legend-num">1</div><div class="map-legend-name">Cup Race</div></div>
+<div class="map-legend-item"><div class="map-legend-num">2</div><div class="map-legend-name">Egg Race</div></div>
+<div class="map-legend-item"><div class="map-legend-num">3</div><div class="map-legend-name">Sponge Race</div></div>
+<div class="map-legend-item"><div class="map-legend-num">4</div><div class="map-legend-name">Hula Hoop Contest</div></div>
+<div class="map-legend-item"><div class="map-legend-num">5</div><div class="map-legend-name">Limbo</div></div>
+<div class="map-legend-item"><div class="map-legend-num">6</div><div class="map-legend-name">Obstacle Course + Dizzy Bat</div></div>
+<div class="map-legend-item"><div class="map-legend-num">7</div><div class="map-legend-name">Sack Race</div></div>
+<div class="map-legend-item"><div class="map-legend-num">8</div><div class="map-legend-name">Jump the Creek</div></div>
+<div class="map-legend-item"><div class="map-legend-num">9</div><div class="map-legend-name">RPS Hoop Hop</div></div>
+<div class="map-legend-item"><div class="map-legend-num">10</div><div class="map-legend-name">Playground</div></div>
+<div class="map-legend-item"><div class="map-legend-num">11</div><div class="map-legend-name">Class Soccer</div></div>
+<div class="map-legend-item"><div class="map-legend-num">12</div><div class="map-legend-name">Inflatable (PTA)</div></div>
+<div class="map-legend-item"><div class="map-legend-num">13</div><div class="map-legend-name">Scooter Relay</div></div>
+<div class="map-legend-item"><div class="map-legend-num">14</div><div class="map-legend-name">Icy Pop, Chalk &amp; Dance</div></div>
+</div>
+</div>
+</div>
+
+<div class="container" style="padding-top:0">
+<p class="section-label">Teacher Resources</p>
+<h2 class="section-title">Documents &amp; Guides</h2>
+<div class="cards">
+<a class="card" href="https://docs.google.com/document/d/1Ob8fL1izfC6lFd_ojHvt87lqGTRDLDKF/edit" target="_blank"><div class="card-icon gold">&#128196;</div><div class="card-body"><div class="card-title">Parent Information Sheet</div><div class="card-desc">What families need to know — clothing, water bottles, sunscreen, and logistics.</div></div></a>
+<a class="card" href="https://docs.google.com/document/d/17ctdxac34t7xjvzG2aXjSQaxx9tkWUJu/edit" target="_blank"><div class="card-icon blue">&#128203;</div><div class="card-body"><div class="card-title">Volunteer Station Guide</div><div class="card-desc">Setup instructions, rules, equipment, and tips for all 14 stations.</div></div></a>
+<a class="card" href="https://drive.google.com/file/d/1n_44nq8CxtPYjrFj4TC2o-jyah5Jo5ah/view" target="_blank"><div class="card-icon red">&#127916;</div><div class="card-body"><div class="card-title">SKD Information Video</div><div class="card-desc">Watch a quick video overview of Super Kids Day.</div></div></a>
+<a class="card" href="https://www.signupgenius.com/go/10C084DAEA828A6FE3-61929396-42126" target="_blank"><div class="card-icon orange">&#128587;</div><div class="card-body"><div class="card-title">Volunteer Sign-Up (SignUpGenius)</div><div class="card-desc">Sign up to volunteer for a time slot on Super Kids Day.</div></div></a>
+</div>
+</div>
+
+<div class="footer">Questions? Contact <a href="/cdn-cgi/l/email-protection#cd87bea0a4b9a5fff88dbaaebdbebee3a3a8b9">Coach Smith</a><br>Jeffreys Grove Elementary &bull; S
